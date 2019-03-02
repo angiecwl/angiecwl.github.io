@@ -63,11 +63,15 @@
         }
 
         }
-        @img (min-width:400px) {
+        @img (min-width:700px) {
         .container {
             display: grid;
-            grid-template-columns: 400px 400px 400px;
+            grid-template-columns: 1fr 1fr 1fr;
             }
+         @img (max-width:400px) {
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
         }
       </style>
     </head>
@@ -119,12 +123,12 @@
                 </div>
           <div class="container">
         <div class="photo">
-            <img src="https://angeliquechan.files.wordpress.com/2018/01/1.png" scale="0">
+            <img src="https://angeliquechan.files.wordpress.com/2018/01/1.png">
         </div>
         <div class="photo">
-            <img src="https://angeliquechan.files.wordpress.com/2018/01/2.png" scale="0">
+            <img src="https://angeliquechan.files.wordpress.com/2018/01/2.png">
         </div>
         <div class="photo">
-            <img src="https://angeliquechan.files.wordpress.com/2018/01/3.png" scale="0">
+            <img src="https://angeliquechan.files.wordpress.com/2018/01/3.png">
         </div></div>       
           </html>
