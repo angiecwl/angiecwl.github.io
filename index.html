@@ -100,6 +100,25 @@
                 grid-area: p2;
             }
         }
+        
+           @media (max-width: 800px) {
+            #begin {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: auto;
+                grid-template-areas: /* prettier-ignore */
+                "p1" "hs" "p2"
+            }
+            .headshot {
+                grid-area: hs;
+            }
+            .profile1 {
+                grid-area: p1;
+            }
+            .profile2 {
+                grid-area: p2;
+            }
+        }
     </style>
 
     <div id="begin">
