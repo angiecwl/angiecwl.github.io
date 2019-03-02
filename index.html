@@ -50,33 +50,6 @@
         .portfolio-item {
           margin-left: 1em;
         }
-        .photo {
-            min-width: 100px;
-            min-height: 100px;
-            background-color: antiquewhite;
-            border: lightblue 1px solid;
-            margin: 5px;
-        }
-        .container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-        
-         @media (min-width:400px) {
-            .container {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-        
-        @media (min-width:700px) {
-            .container {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-            }
-        }
-        
-       
       </style>
     </head>
     <body>
@@ -169,14 +142,34 @@
                     <li><a href="hw1/">Homework 1</a><br></li>
                     </ol>
                 </div>
-          <div class="container">
-        <div class="photo">
-            <img src="https://angeliquechan.files.wordpress.com/2018/01/1.png">
-        </div>
-        <div class="photo">
-            <img src="https://angeliquechan.files.wordpress.com/2018/01/2.png">
-        </div>
-        <div class="photo">
-            <img src="https://angeliquechan.files.wordpress.com/2018/01/3.png">
-        </div></div>       
-          </html>
+   <style>
+        .photo {
+            min-width: 100px;
+            min-height: 100px;
+            background-color: antiquewhite;
+            border: lightblue 1px solid;
+            margin: 5px;
+        }
+           @media (min-width:400px) {
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        @media (min-width:700px) {
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+    </style>
+
+    <div class="container">
+        <div class="photo">Photo</div>
+        <div class="photo">Photo</div>
+        <div class="photo">Photo</div>
+        <div class="photo">Photo</div>
+        <div class="photo">Photo</div>
+        <div class="photo">Photo</div>
+    </div>
