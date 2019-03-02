@@ -77,35 +77,7 @@
             }
         }
         
-        .headshot {
-        }
-        
-        .profile1,
-        .profile2 {
-            background-color: blueviolet;
-            margin:2px;
-        }
-        @media (min-wideth: 600px) {
-            #begin {
-                display:grid;
-                grid-template-columns: 2fr 1fr;
-                grid-template-rows: auto;
-                grid-template-areas: /*prettier-ignore */
-                "hs p1"
-                /*prettier-ignore */
-                "hs p2";
-            }
-            .headshot {
-                grid-area:hs;
-            }
-            .profile1 {
-                gird-area:p1;
-            }
-            .profile2 {
-                grid-area:p2;
-            }
-        }
-                    
+       
       </style>
     </head>
     <body>
@@ -116,11 +88,49 @@
               <h1>Angie Chan</h1>
             </div>
             
-            <div id="begin">
-            <div class="headshot"> <img src="https://angeliquechan.files.wordpress.com/2019/01/profile-pic-1x1.jpg?w=205&h=205"> </div>
-                <div class="profile1"></div>
-                <div class="profile2"></div>
-            </div>
+    <style>
+        .headshot {
+            background-color: aqua;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .profile1,
+        .profile2 {
+            background-color: blueviolet;
+            margin: 2px;
+        }
+        
+        @media (min-width: 600px) {
+            #begin {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                grid-template-rows: auto;
+                grid-template-areas: /* prettier-ignore */
+                "hs p1"
+                /* prettier-ignore */
+                "hs p2";
+            }
+            .headshot {
+                grid-area: hs;
+            }
+            .profile1 {
+                grid-area: p1;
+            }
+            .profile2 {
+                grid-area: p2;
+            }
+        }
+    </style>
+
+    <div id="begin">
+        <div class="headshot">headshot</div>
+        <div class="profile1">profile 1</div>
+        <div class="profile2">profile 2</div>
+    </div>
             
             <div class="Intro">
                     <h2>About</h2>
