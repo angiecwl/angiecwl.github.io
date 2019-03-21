@@ -1,0 +1,45 @@
+<html>
+
+<style>
+    body {
+        background-color: rgb(140, 236, 240);
+    }
+    
+    h1 {
+        style="font-family:cursive" style="font-size:5vw"
+    }
+    
+    p {
+        style="font-family:verdana" style="font-size:2vw"
+    }
+</style>
+
+<head>
+    <h1 style="font-size:5vw" style="font-family:italic">Currency Converter
+    </h1>
+</head>
+
+<body>
+    <p>Hong Kong dollar to Australian dollar conversion.</p>
+    HKD:
+    <input id="num1" type="number" value="10">
+    <br>
+    <button id="Calculate">Calculate</button>
+    <br> AUD:
+    <input id="result" type="number">
+
+    <script>
+        function calculate() {
+            a = +document.getElementById("num1").value
+            result = ((a) / 1 * 0.178754)
+            document.getElementById("result").value = result
+        }
+
+        document.getElementById("Calculate").addEventListener('click', calculate)
+    </script>
+
+
+
+</body>
+
+</html>
