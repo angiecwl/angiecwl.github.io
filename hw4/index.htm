@@ -1,0 +1,78 @@
+<head>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    
+    
+    <title> Criticize the Visuals </title>
+    <style>
+      body {
+        background-color: rgb(245, 245, 245);
+        font-family:"Arial", cursive, sans-serif;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 30px;
+            top: 0;
+            left: 0;
+            margin: 0;
+            width: 100%;
+            background-color: rgb(235, 254, 255);
+            padding: 0.5em
+        }
+        
+        h2 {
+            text-align: left;
+            font-size: 20px;
+            margin-left: 1em;
+        }
+        
+        h3 {
+            text-align: left;
+            font-size: 1em;
+            margin-left: 1em;
+        }
+        
+        p {
+            font-size: 1em;
+            margin-left: 1em;
+        }
+        
+        a {
+            font-size: 1em;
+            margin-left: 1em;
+        }
+      
+        li {
+            font-size: 1em;
+        }
+
+        img {
+            max-width: 100%;
+        }
+        
+
+      </style>
+    </head>
+    <body>
+            <div class="name">
+              <h1 class="animated bounce">Fixing what's wrong, stating what's right</h1>
+            </div>
+            
+            <h2>Gunshot Victims in School Shootings</h2>
+            <p>This is a chart provided under an article about the extensiveness of school shootings in the United States on<a href="https://www.nytimes.com/interactive/2018/02/15/us/school-shootings-sandy-hook-parkland.html>">the New York Times</a>, written by Jugal K. Patel. </p>
+            <p> As you can see, the graph alone has no words on it. If someone would have searched for this image, they would only have dots.</p>
+            <img src="https://static01.nyt.com/newsgraphics/2018/01/24/school-shootings/4eace0fc955dd7c6aa3a1d5a9004d72920a1daaa/victims-1200.png" style="max-width:100%">
+            <p>However, to be fair, this is what it looks like on their website, alongside with words and labels:</p>
+            <img src="https://angeliquechan.files.wordpress.com/2019/04/original.png">
+            <p>While it is not difficult to see the effort put into researching for this story, the chart seem messy compared to the rest of the story.
+                The numbers are not stated, nor are the orbs presenting the number in any order at all.</p>
+            <p>To solve that problem, I have created the following, in the hopes to create a clearer picture as to the trend of school shootings and its victims:</p>
+
+            <div id="highcharts-7350ef96-d7d9-4413-bd1f-48c31206bc2a"></div><script>
+                (function(){ var files = ["https://code.highcharts.com/stock/highstock.js","https://code.highcharts.com/highcharts-more.js","https://code.highcharts.com/highcharts-3d.js","https://code.highcharts.com/modules/data.js","https://code.highcharts.com/modules/exporting.js","https://code.highcharts.com/modules/funnel.js","https://code.highcharts.com/6.0.2/modules/annotations.js","https://code.highcharts.com/modules/solid-gauge.js"],loaded = 0; if (typeof window["HighchartsEditor"] === "undefined") {window.HighchartsEditor = {ondone: [cl],hasWrapped: false,hasLoaded: false};include(files[0]);} else {if (window.HighchartsEditor.hasLoaded) {cl();} else {window.HighchartsEditor.ondone.push(cl);}}function isScriptAlreadyIncluded(src){var scripts = document.getElementsByTagName("script");for (var i = 0; i < scripts.length; i++) {if (scripts[i].hasAttribute("src")) {if ((scripts[i].getAttribute("src") || "").indexOf(src) >= 0 || (scripts[i].getAttribute("src") === "http://code.highcharts.com/highcharts.js" && src === "https://code.highcharts.com/stock/highstock.js")) {return true;}}}return false;}function check() {if (loaded === files.length) {for (var i = 0; i < window.HighchartsEditor.ondone.length; i++) {try {window.HighchartsEditor.ondone[i]();} catch(e) {console.error(e);}}window.HighchartsEditor.hasLoaded = true;}}function include(script) {function next() {++loaded;if (loaded < files.length) {include(files[loaded]);}check();}if (isScriptAlreadyIncluded(script)) {return next();}var sc=document.createElement("script");sc.src = script;sc.type="text/javascript";sc.onload=function() { next(); };document.head.appendChild(sc);}function each(a, fn){if (typeof a.forEach !== "undefined"){a.forEach(fn);}else{for (var i = 0; i < a.length; i++){if (fn) {fn(a[i]);}}}}var inc = {},incl=[]; each(document.querySelectorAll("script"), function(t) {inc[t.src.substr(0, t.src.indexOf("?"))] = 1; }); function cl() {if(typeof window["Highcharts"] !== "undefined"){var options={"chart":{"inverted":true,"polar":false},"plotOptions":{"series":{"stacking":"normal","dataLabels":{"enabled":true},"animation":false}},"title":{"text":"Gunshot Victims in School Shootings"},"subtitle":{"text":"Source: Gun Violence Archive "},"xAxis":[{"index":0,"isX":true,"title":{"text":"Monthly Data from Feb 2015 to Feb 2017"},"labels":{"format":"{value: %b '%y}"}}],"yAxis":[{"index":0,"title":{"text":"Total Victims"},"labels":{}}],"series":[{"turboThreshold":0,"_colorIndex":0,"_symbolIndex":0,"type":"column","marker":{"enabled":false},"color":"#d32f2f"},{"turboThreshold":0,"_colorIndex":1,"_symbolIndex":0,"type":"column","color":"#ffcdd2"}],"annotations":[{"id":"label_0","labels":[{"id":"label_0","text":"This is the number of victims from the Parkland shooting.","point":{"x":1560705531428.5715,"y":17.596810933940773,"xAxis":0,"yAxis":0},"backgroundColor":"#000000","shape":"callout","borderWidth":0,"x":0,"y":-16}]}],"data":{"csv":"\"Category\";\"Injured\";\"Killed\"\n\"01 February 2015\";12;2\n\"01 March 2015\";6;0\n\"01 April 2015\";6;5\n\"01 May 2015\";6;2\n\"01 June 2015\";1;0\n\"01 July 2015\";3;1\n\"01 August 2015\";1;2\n\"01 September 2015\";7;5\n\"01 October 2015\";21;13\n\"01 November 2015\";10;2\n\"01 December 2015\";1;0\n\"01 January 2016\";3;1\n\"01 February 2016\";7;2\n\"01 March 2016\";7;2\n\"01 April 2016\";5;1\n\"01 May 2016\";18;5\n\"01 June 2016\";5;3\n\"01 July 2016\";2;0\n\"01 August 2016\";1;0\n\"01 September 2016\";20;4\n\"01 October 2016\";15;1\n\"01 November 2016\";6;4\n\"01 December 2016\";3;2\n\"01 January 2017\";8;4\n\"01 February 2017\";0;0\n\"01 March 2017\";9;4\n\"01 April 2017\";4;4\n\"01 May 2017\";2;5\n\"01 June 2017\";7;2\n\"01 July 2017\";1;0\n\"01 August 2017\";4;0\n\"01 September 2017\";13;4\n\"01 October 2017\";6;4\n\"01 November 2017\";17;8\n\"01 December 2017\";11;8\n\"01 January 2018\";15;6\n\"01 February 2018\";16;18","googleSpreadsheetKey":false,"googleSpreadsheetWorksheet":false}};/*
+                */new Highcharts.Chart("highcharts-7350ef96-d7d9-4413-bd1f-48c31206bc2a", options);}}})();
+                </script>
+    </body>
+</html>
